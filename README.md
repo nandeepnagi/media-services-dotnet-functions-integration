@@ -15,24 +15,31 @@ This template creates a Logic app which processes a live program (from a live ch
 
 ## Steps
 
-1. Create an Azure Media Services Account and principal
-2. Deploy Functions:
+1. Create an Azure Media Services Account
+2. Create Azure Media Service API principal
+3. Deploy Functions:
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjohndehavilland%2Fmedia-services-dotnet-functions-integration%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-3. Create a Cosmos DB 
+3. Create a Cosmos DB with the SQL API. 
 
-4. Deploy Logic Apps
+4. Create a Cosmos DB Collection and database
+
+5. Deploy Logic Apps
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjohndehavilland%2Fmedia-services-dotnet-functions-integration%2Fmaster%2Fmedia-functions-for-logic-app%2Flogicapp4-liveanalytics-deploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-Then fix the errors.
+6. Download and install Azure Media Services Explorer from [here](https://github.com/Azure/Azure-Media-Services-Explorer/releases)
 
-You need to customize the channel name, program name and language of the audio. To do so, change the parameters in the live-subclip-analytics function call.
+7. Open Azure Media Services Explorer and connect.
+
+8. Under Live tab, first create a channel and then create a program.
+
+9. Update Logic App with these values (look in the live-subclip-analytics function call).
 
 ![Screen capture](media-functions-for-logic-app/images/logicapp4-live-1.png?raw=true)
 
