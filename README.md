@@ -13,6 +13,8 @@ This template creates a Logic app which processes a live program (from a live ch
 * gets the text, faces and motion detection information and sends this data to a Cosmos database,
 * optionally copy the faces to a dedicated Azure storage container.
 
+## Steps
+
 1. Create an Azure Media Services Account and principal
 2. Deploy Functions:
 
