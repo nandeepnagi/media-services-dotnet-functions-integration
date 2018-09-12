@@ -25,7 +25,7 @@ This template creates a Logic app which processes a live program (from a live ch
 
 3. Create a Cosmos DB with the SQL API. 
 
-4. Create a Cosmos DB Collection and database
+4. Create a Cosmos DB Collection (called analytics) and database (called livettml)
 
 5. Deploy Logic Apps
 
@@ -37,11 +37,17 @@ This template creates a Logic app which processes a live program (from a live ch
 
 7. Open Azure Media Services Explorer and connect.
 
-8. Under Live tab, first create a channel and then create a program.
+8. Under Live tab, first create a channel called Channel1 and then create a program called P1.
 
-9. Update Logic App with these values (look in the live-subclip-analytics function call).
+9. Start the default streaming endpoint and both the channel and program
+
+10. Update Logic App with these values (look in the live-subclip-analytics function call).
 
 ![Screen capture](media-functions-for-logic-app/images/logicapp4-live-1.png?raw=true)
+
+11. Create a controller logic app. Start by creating a new logic app
+
+12. 
 
 Notes
 
